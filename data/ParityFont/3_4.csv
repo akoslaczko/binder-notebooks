@@ -1,0 +1,361 @@
+{'first_hands': 'PQ', 'participant': u'3_4', 'dateStr': '2017/10/20_13:52', 'autopilot': False, 'exp_id': 'Parity decision in Indo-Arabic numbers', 'condition': 'a'}
+3_4 num_comp "FreeSans" PQ PQ 3 q 0.978254744434
+3_4 num_comp "FreeSans" PQ PQ 2 p 0.879174165661
+3_4 num_comp "FreeSans" PQ PQ 6 p 1.03344700683
+3_4 num_comp "FreeSans" PQ PQ 7 q 0.640025072265
+3_4 num_comp "FreeSans" PQ PQ 4 p 0.796651234385
+3_4 num_comp "FreeSans" PQ PQ 1 q 0.612516290857
+3_4 num_comp "FreeSans" PQ PQ 7 q 0.91084221832
+3_4 num_comp "FreeSans" PQ PQ 8 p 0.578957885969
+3_4 num_comp "FreeSans" PQ PQ 1 q 0.676394491573
+3_4 num_comp "FreeSans" PQ PQ 7 q 0.761248401948
+3_4 num_comp "FreeSans" PQ PQ 7 q 0.657657912117
+3_4 num_comp "FreeSans" PQ PQ 6 p 0.87714883266
+3_4 num_comp "FreeSans" PQ PQ 2 p 0.710723993601
+3_4 num_comp "FreeSans" PQ PQ 8 p 0.684232067666
+3_4 num_comp "FreeSans" PQ PQ 2 p 0.747180607403
+3_4 num_comp "FreeSans" PQ PQ 6 p 0.648496903246
+3_4 num_comp "FreeSans" PQ PQ 8 p 0.60654672503
+3_4 num_comp "FreeSans" PQ PQ 8 p 0.586276329006
+3_4 num_comp "FreeSans" PQ PQ 5 q 0.573828925029
+3_4 num_comp "FreeSans" PQ PQ 6 p 0.519573770929
+3_4 num_comp "FreeSans" PQ PQ 1 q 0.512834659312
+3_4 num_comp "FreeSans" PQ PQ 9 q 0.731616232428
+3_4 num_comp "FreeSans" PQ PQ 5 q 0.584871907835
+3_4 num_comp "FreeSans" PQ PQ 6 p 0.571943227435
+3_4 num_comp "FreeSans" PQ PQ 3 q 0.566433217144
+3_4 num_comp "FreeSans" PQ PQ 9 q 0.792860290152
+3_4 num_comp "FreeSans" PQ PQ 3 q 0.642373428331
+3_4 num_comp "FreeSans" PQ PQ 9 q 0.709406456677
+3_4 num_comp "FreeSans" PQ PQ 9 q 0.612335385405
+3_4 num_comp "FreeSans" PQ PQ 3 q 0.478582422016
+3_4 num_comp "FreeSans" PQ PQ 9 q 0.50258387439
+3_4 num_comp "FreeSans" PQ PQ 6 p 0.471594449366
+3_4 num_comp "FreeSans" PQ PQ 6 p 0.680943500483
+3_4 num_comp "FreeSans" PQ PQ 9 q 0.533135775127
+3_4 num_comp "FreeSans" PQ PQ 3 q 0.582908635144
+3_4 num_comp "FreeSans" PQ PQ 2 p 0.833820919157
+3_4 num_comp "FreeSans" PQ PQ 3 q 0.522637990769
+3_4 num_comp "FreeSans" PQ PQ 2 p 0.612118795514
+3_4 num_comp "FreeSans" PQ PQ 5 q 0.95934129355
+3_4 num_comp "FreeSans" PQ PQ 7 q 0.666799682309
+3_4 num_comp "FreeSans" PQ PQ 6 p 0.559544540592
+3_4 num_comp "FreeSans" PQ PQ 7 q 0.627589459647
+3_4 num_comp "FreeSans" PQ PQ 8 p 0.646203470416
+3_4 num_comp "FreeSans" PQ PQ 7 q 0.579991187435
+3_4 num_comp "FreeSans" PQ PQ 1 q 0.646485223551
+3_4 num_comp "FreeSans" PQ PQ 1 q 0.586822768673
+3_4 num_comp "FreeSans" PQ PQ 3 q 0.684858254623
+3_4 num_comp "FreeSans" PQ PQ 4 p 0.539654573309
+3_4 num_comp "FreeSans" PQ PQ 1 q 0.534253788763
+3_4 num_comp "FreeSans" PQ PQ 2 p 0.591018034727
+3_4 num_comp "FreeSans" PQ PQ 2 p 0.5711227922
+3_4 num_comp "FreeSans" PQ PQ 8 p 0.524908151012
+3_4 num_comp "FreeSans" PQ PQ 9 q 0.614320379333
+3_4 num_comp "FreeSans" PQ PQ 2 p 0.747629922931
+3_4 num_comp "FreeSans" PQ PQ 8 p 0.585779847926
+3_4 num_comp "FreeSans" PQ PQ 4 p 0.724627328804
+3_4 num_comp "FreeSans" PQ PQ 7 q 0.554602690856
+3_4 num_comp "FreeSans" PQ PQ 1 q 0.620744535699
+3_4 num_comp "FreeSans" PQ PQ 1 q 0.497695706785
+3_4 num_comp "FreeSans" PQ PQ 5 q 0.673761589685
+3_4 num_comp "FreeSans" PQ PQ 7 q 0.686650551739
+3_4 num_comp "FreeSans" PQ PQ 6 p 0.549431218766
+3_4 num_comp "FreeSans" PQ PQ 4 p 0.61459685734
+3_4 num_comp "FreeSans" PQ PQ 4 p 0.507722144248
+3_4 num_comp "FreeSans" PQ PQ 5 q 0.571649372578
+3_4 num_comp "FreeSans" PQ PQ 5 q 0.647489046445
+3_4 num_comp "FreeSans" PQ PQ 5 q 0.539603063255
+3_4 num_comp "FreeSans" PQ PQ 8 p 0.564415951842
+3_4 num_comp "FreeSans" PQ PQ 8 p 0.464305174653
+3_4 num_comp "FreeSans" PQ PQ 9 q 0.592213002848
+3_4 num_comp "FreeSans" PQ PQ 6 p 0.874131468241
+3_4 num_comp "FreeSans" PQ PQ 9 q 0.979849379975
+3_4 num_comp "FreeSans" PQ PQ 4 p 0.623648640234
+3_4 num_comp "FreeSans" PQ PQ 9 q 0.611317599076
+3_4 num_comp "FreeSans" PQ PQ 3 q 0.654594312771
+3_4 num_comp "FreeSans" PQ PQ 2 p 0.683074025321
+3_4 num_comp "FreeSans" PQ PQ 8 p 0.67397911055
+3_4 num_comp "FreeSans" PQ PQ 5 q 0.525661871536
+3_4 num_comp "FreeSans" PQ PQ 1 q 0.519089701702
+3_4 num_comp "FreeSans" PQ PQ 4 p 0.544536224566
+3_4 num_comp "FreeSans" PQ PQ 1 q 0.466298236162
+3_4 num_comp "FreeSans" PQ PQ 3 q 0.626220723148
+3_4 num_comp "FreeSans" PQ PQ 7 q 0.717956173117
+3_4 num_comp "FreeSans" PQ PQ 4 p 0.539505628869
+3_4 num_comp "FreeSans" PQ PQ 3 q 0.597566311364
+3_4 num_comp "FreeSans" PQ PQ 4 p 0.537431268371
+3_4 num_comp "FreeSans" PQ PQ 5 q 0.706263420521
+3_4 num_comp "FreeSans" PQ PQ 2 p 0.529609827907
+3_4 num_comp "FreeSans" PQ PQ 4 p 0.931718321401
+3_4 num_comp "FreeSans" PQ PQ 5 q 0.501837290707
+3_4 num_comp "Courier New" PQ PQ 1 q 4.2777030298
+3_4 num_comp "Courier New" PQ PQ 6 p 1.2095581938
+3_4 num_comp "Courier New" PQ PQ 9 p 1.44386287185
+3_4 num_comp "Courier New" PQ PQ 9 p 0.691316854209
+3_4 num_comp "Courier New" PQ PQ 3 q 1.72128011473
+3_4 num_comp "Courier New" PQ PQ 1 q 1.07006994181
+3_4 num_comp "Courier New" PQ PQ 8 p 0.982251418056
+3_4 num_comp "Courier New" PQ PQ 3 q 0.515296275145
+3_4 num_comp "Courier New" PQ PQ 3 q 1.53302716988
+3_4 num_comp "Courier New" PQ PQ 5 q 0.503612521221
+3_4 num_comp "Courier New" PQ PQ 8 p 0.54353581497
+3_4 num_comp "Courier New" PQ PQ 8 p 0.410738888197
+3_4 num_comp "Courier New" PQ PQ 9 q 0.784175593057
+3_4 num_comp "Courier New" PQ PQ 8 p 0.559979582205
+3_4 num_comp "Courier New" PQ PQ 2 p 1.21187427861
+3_4 num_comp "Courier New" PQ PQ 5 q 0.500399357057
+3_4 num_comp "Courier New" PQ PQ 5 q 0.51082142815
+3_4 num_comp "Courier New" PQ PQ 4 p 0.560512678931
+3_4 num_comp "Courier New" PQ PQ 7 q 0.763440366369
+3_4 num_comp "Courier New" PQ PQ 7 q 0.514477081131
+3_4 num_comp "Courier New" PQ PQ 3 q 0.516752516618
+3_4 num_comp "Courier New" PQ PQ 7 q 0.669129420188
+3_4 num_comp "Courier New" PQ PQ 5 q 0.611589422449
+3_4 num_comp "Courier New" PQ PQ 8 p 0.597907021525
+3_4 num_comp "Courier New" PQ PQ 6 p 0.73719761183
+3_4 num_comp "Courier New" PQ PQ 7 q 0.847745044506
+3_4 num_comp "Courier New" PQ PQ 6 p 0.91305031837
+3_4 num_comp "Courier New" PQ PQ 3 q 0.659479687689
+3_4 num_comp "Courier New" PQ PQ 5 q 0.567858118098
+3_4 num_comp "Courier New" PQ PQ 2 p 0.522387888283
+3_4 num_comp "Courier New" PQ PQ 2 p 0.91715838993
+3_4 num_comp "Courier New" PQ PQ 6 p 0.63907400053
+3_4 num_comp "Courier New" PQ PQ 7 q 0.666989896563
+3_4 num_comp "Courier New" PQ PQ 2 p 0.655759492074
+3_4 num_comp "Courier New" PQ PQ 5 q 0.645911787637
+3_4 num_comp "Courier New" PQ PQ 9 p 0.513031700277
+3_4 num_comp "Courier New" PQ PQ 4 p 1.24999534548
+3_4 num_comp "Courier New" PQ PQ 1 q 0.652949718875
+3_4 num_comp "Courier New" PQ PQ 6 p 0.649461938534
+3_4 num_comp "Courier New" PQ PQ 6 p 0.751199622639
+3_4 num_comp "Courier New" PQ PQ 2 p 0.942883562762
+3_4 num_comp "Courier New" PQ PQ 7 q 0.585061191232
+3_4 num_comp "Courier New" PQ PQ 2 p 0.604001948726
+3_4 num_comp "Courier New" PQ PQ 1 q 0.535258852877
+3_4 num_comp "Courier New" PQ PQ 8 p 0.865067273262
+3_4 num_comp "Courier New" PQ PQ 4 p 0.492382116732
+3_4 num_comp "Courier New" PQ PQ 8 p 0.47572951694
+3_4 num_comp "Courier New" PQ PQ 7 q 0.603671788704
+3_4 num_comp "Courier New" PQ PQ 3 q 0.766938696965
+3_4 num_comp "Courier New" PQ PQ 9 q 0.614311690908
+3_4 num_comp "Courier New" PQ PQ 1 q 0.545963918208
+3_4 num_comp "Courier New" PQ PQ 6 p 0.55754558323
+3_4 num_comp "Courier New" PQ PQ 1 q 0.630711395526
+3_4 num_comp "Courier New" PQ PQ 5 q 1.26731788449
+3_4 num_comp "Courier New" PQ PQ 1 q 0.421814142261
+3_4 num_comp "Courier New" PQ PQ 5 q 0.492508719442
+3_4 num_comp "Courier New" PQ PQ 6 p 0.677144798799
+3_4 num_comp "Courier New" PQ PQ 3 q 0.62593990087
+3_4 num_comp "Courier New" PQ PQ 4 p 0.549592885422
+3_4 num_comp "Courier New" PQ PQ 8 p 0.46378604148
+3_4 num_comp "Courier New" PQ PQ 6 p 0.527762297308
+3_4 num_comp "Courier New" PQ PQ 4 p 0.536982263206
+3_4 num_comp "Courier New" PQ PQ 7 q 0.932584680966
+3_4 num_comp "Courier New" PQ PQ 3 q 0.504518909729
+3_4 num_comp "Courier New" PQ PQ 3 q 0.45792321919
+3_4 num_comp "Courier New" PQ PQ 2 p 0.568484304938
+3_4 num_comp "Courier New" PQ PQ 9 q 0.642964861589
+3_4 num_comp "Courier New" PQ PQ 5 q 0.591005932889
+3_4 num_comp "Courier New" PQ PQ 9 q 0.473982834141
+3_4 num_comp "Courier New" PQ PQ 8 p 0.451611391734
+3_4 num_comp "Courier New" PQ PQ 1 q 0.482289274805
+3_4 num_comp "Courier New" PQ PQ 3 q 0.498853749014
+3_4 num_comp "Courier New" PQ PQ 1 q 0.395868035266
+3_4 num_comp "Courier New" PQ PQ 2 p 0.529813074856
+3_4 num_comp "Courier New" PQ PQ 4 p 0.477156279841
+3_4 num_comp "Courier New" PQ PQ 2 p 0.436028088443
+3_4 num_comp "Courier New" PQ PQ 5 q 0.459273027373
+3_4 num_comp "Courier New" PQ PQ 4 p 0.5947847754
+3_4 num_comp "Courier New" PQ PQ 7 q 0.605645922013
+3_4 num_comp "Courier New" PQ PQ 6 p 0.786672272719
+3_4 num_comp "Courier New" PQ PQ 4 p 0.537464470486
+3_4 num_comp "Courier New" PQ PQ 7 q 0.555277905311
+3_4 num_comp "Courier New" PQ PQ 8 p 0.421407027636
+3_4 num_comp "Courier New" PQ PQ 9 q 0.492251169868
+3_4 num_comp "Courier New" PQ PQ 4 p 0.558665768942
+3_4 num_comp "Courier New" PQ PQ 4 p 0.481113545247
+3_4 num_comp "Courier New" PQ PQ 9 q 0.512497052201
+3_4 num_comp "Courier New" PQ PQ 9 p 0.562850794988
+3_4 num_comp "Courier New" PQ PQ 2 p 0.956051795394
+3_4 num_comp "Courier New" PQ PQ 1 q 0.423493800103
+3_4 num_comp "FreeSans" PQ QP 6 q 0.827505988767
+3_4 num_comp "FreeSans" PQ QP 4 q 0.771043044981
+3_4 num_comp "FreeSans" PQ QP 9 p 0.644219717709
+3_4 num_comp "FreeSans" PQ QP 4 q 0.575236759381
+3_4 num_comp "FreeSans" PQ QP 4 q 0.491140603554
+3_4 num_comp "FreeSans" PQ QP 3 p 0.690436841454
+3_4 num_comp "FreeSans" PQ QP 4 q 0.495684026973
+3_4 num_comp "FreeSans" PQ QP 9 p 0.874019449577
+3_4 num_comp "FreeSans" PQ QP 2 q 0.668429071433
+3_4 num_comp "FreeSans" PQ QP 8 q 0.497909503873
+3_4 num_comp "FreeSans" PQ QP 5 p 0.657975039445
+3_4 num_comp "FreeSans" PQ QP 2 q 0.552084910683
+3_4 num_comp "FreeSans" PQ QP 2 q 0.43465035304
+3_4 num_comp "FreeSans" PQ QP 5 p 0.640807650751
+3_4 num_comp "FreeSans" PQ QP 8 q 0.630608065403
+3_4 num_comp "FreeSans" PQ QP 7 p 0.538357205805
+3_4 num_comp "FreeSans" PQ QP 6 q 0.884796194499
+3_4 num_comp "FreeSans" PQ QP 6 q 0.583224521135
+3_4 num_comp "FreeSans" PQ QP 1 p 0.626791366143
+3_4 num_comp "FreeSans" PQ QP 3 p 0.743204103317
+3_4 num_comp "FreeSans" PQ QP 7 p 0.556543932413
+3_4 num_comp "FreeSans" PQ QP 3 p 0.608384325984
+3_4 num_comp "FreeSans" PQ QP 8 q 0.452430895995
+3_4 num_comp "FreeSans" PQ QP 4 q 0.507134745014
+3_4 num_comp "FreeSans" PQ QP 3 p 0.580107240006
+3_4 num_comp "FreeSans" PQ QP 5 p 0.607575992704
+3_4 num_comp "FreeSans" PQ QP 4 q 0.601843186421
+3_4 num_comp "FreeSans" PQ QP 6 q 0.789170814329
+3_4 num_comp "FreeSans" PQ QP 3 p 0.526588119217
+3_4 num_comp "FreeSans" PQ QP 1 p 0.767093226779
+3_4 num_comp "FreeSans" PQ QP 9 p 0.846636339906
+3_4 num_comp "FreeSans" PQ QP 8 q 0.815410776064
+3_4 num_comp "FreeSans" PQ QP 5 p 0.679892822052
+3_4 num_comp "FreeSans" PQ QP 7 p 0.668712376035
+3_4 num_comp "FreeSans" PQ QP 5 p 0.561484540813
+3_4 num_comp "FreeSans" PQ QP 2 q 0.763673402253
+3_4 num_comp "FreeSans" PQ QP 4 q 0.451627217117
+3_4 num_comp "FreeSans" PQ QP 9 p 0.602243164089
+3_4 num_comp "FreeSans" PQ QP 7 p 0.837489915197
+3_4 num_comp "FreeSans" PQ QP 3 p 0.550443730084
+3_4 num_comp "FreeSans" PQ QP 5 q 0.560618181131
+3_4 num_comp "FreeSans" PQ QP 2 q 1.42670293048
+3_4 num_comp "FreeSans" PQ QP 9 p 1.24947124755
+3_4 num_comp "FreeSans" PQ QP 5 p 0.604443816934
+3_4 num_comp "FreeSans" PQ QP 2 q 0.719657241832
+3_4 num_comp "FreeSans" PQ QP 1 p 0.759344086284
+3_4 num_comp "FreeSans" PQ QP 6 q 0.773361301864
+3_4 num_comp "FreeSans" PQ QP 7 p 0.710409969324
+3_4 num_comp "FreeSans" PQ QP 8 q 0.611024364829
+3_4 num_comp "FreeSans" PQ QP 1 p 0.672094033565
+3_4 num_comp "FreeSans" PQ QP 6 q 0.987787183374
+3_4 num_comp "FreeSans" PQ QP 6 q 0.545869586873
+3_4 num_comp "FreeSans" PQ QP 1 p 0.642623841064
+3_4 num_comp "FreeSans" PQ QP 5 p 0.734717998654
+3_4 num_comp "FreeSans" PQ QP 4 q 1.06929543114
+3_4 num_comp "FreeSans" PQ QP 8 q 0.629652649281
+3_4 num_comp "FreeSans" PQ QP 2 q 0.912264016224
+3_4 num_comp "FreeSans" PQ QP 8 q 0.610545881093
+3_4 num_comp "FreeSans" PQ QP 9 p 0.581910707871
+3_4 num_comp "FreeSans" PQ QP 7 p 0.48880248738
+3_4 num_comp "FreeSans" PQ QP 6 q 0.609513510484
+3_4 num_comp "FreeSans" PQ QP 8 q 0.670491330209
+3_4 num_comp "FreeSans" PQ QP 7 p 0.682279034867
+3_4 num_comp "FreeSans" PQ QP 4 q 0.759406767087
+3_4 num_comp "FreeSans" PQ QP 9 p 0.750489344355
+3_4 num_comp "FreeSans" PQ QP 2 q 0.781469460228
+3_4 num_comp "FreeSans" PQ QP 2 q 0.830641888198
+3_4 num_comp "FreeSans" PQ QP 6 q 0.687129966333
+3_4 num_comp "FreeSans" PQ QP 2 q 1.0112874998
+3_4 num_comp "FreeSans" PQ QP 5 p 0.592310126987
+3_4 num_comp "FreeSans" PQ QP 9 p 0.587302803877
+3_4 num_comp "FreeSans" PQ QP 4 q 0.622083173017
+3_4 num_comp "FreeSans" PQ QP 1 p 0.69153437519
+3_4 num_comp "FreeSans" PQ QP 1 p 0.521125584957
+3_4 num_comp "FreeSans" PQ QP 9 p 0.713458053535
+3_4 num_comp "FreeSans" PQ QP 5 p 0.560696066706
+3_4 num_comp "FreeSans" PQ QP 3 p 0.513849653071
+3_4 num_comp "FreeSans" PQ QP 7 p 0.475918490207
+3_4 num_comp "FreeSans" PQ QP 3 p 0.482890016981
+3_4 num_comp "FreeSans" PQ QP 7 p 0.491560440394
+3_4 num_comp "FreeSans" PQ QP 1 p 0.532186875585
+3_4 num_comp "FreeSans" PQ QP 1 p 0.511332493392
+3_4 num_comp "FreeSans" PQ QP 7 p 0.551403179998
+3_4 num_comp "FreeSans" PQ QP 9 p 0.595323457499
+3_4 num_comp "FreeSans" PQ QP 6 q 0.550965655828
+3_4 num_comp "FreeSans" PQ QP 3 p 0.856259076274
+3_4 num_comp "FreeSans" PQ QP 8 q 0.657393846195
+3_4 num_comp "FreeSans" PQ QP 1 p 0.645881688572
+3_4 num_comp "FreeSans" PQ QP 8 q 0.63379981881
+3_4 num_comp "FreeSans" PQ QP 3 p 0.637899201829
+3_4 num_comp "Courier New" PQ QP 7 p 1.06485688931
+3_4 num_comp "Courier New" PQ QP 6 q 1.07047302253
+3_4 num_comp "Courier New" PQ QP 8 q 1.26895037678
+3_4 num_comp "Courier New" PQ QP 7 p 0.440313651925
+3_4 num_comp "Courier New" PQ QP 1 p 0.711457234458
+3_4 num_comp "Courier New" PQ QP 5 p 1.01299136132
+3_4 num_comp "Courier New" PQ QP 4 q 0.793964960845
+3_4 num_comp "Courier New" PQ QP 7 p 0.795547494665
+3_4 num_comp "Courier New" PQ QP 5 p 0.562248501228
+3_4 num_comp "Courier New" PQ QP 9 p 0.548407536582
+3_4 num_comp "Courier New" PQ QP 3 p 0.576391388546
+3_4 num_comp "Courier New" PQ QP 6 q 0.587614656193
+3_4 num_comp "Courier New" PQ QP 5 p 0.551271612407
+3_4 num_comp "Courier New" PQ QP 6 q 1.22444269981
+3_4 num_comp "Courier New" PQ QP 6 q 0.491634912556
+3_4 num_comp "Courier New" PQ QP 6 q 0.708343987004
+3_4 num_comp "Courier New" PQ QP 8 q 0.56265406427
+3_4 num_comp "Courier New" PQ QP 4 q 0.467772785341
+3_4 num_comp "Courier New" PQ QP 9 p 0.611735574086
+3_4 num_comp "Courier New" PQ QP 2 q 0.559012995451
+3_4 num_comp "Courier New" PQ QP 1 p 0.505166817689
+3_4 num_comp "Courier New" PQ QP 7 p 0.730204364052
+3_4 num_comp "Courier New" PQ QP 8 q 0.520320664742
+3_4 num_comp "Courier New" PQ QP 4 q 0.475320230471
+3_4 num_comp "Courier New" PQ QP 4 q 0.443562500761
+3_4 num_comp "Courier New" PQ QP 5 p 0.449824990355
+3_4 num_comp "Courier New" PQ QP 4 q 0.537297839066
+3_4 num_comp "Courier New" PQ QP 4 q 0.796412302763
+3_4 num_comp "Courier New" PQ QP 8 q 0.507188737392
+3_4 num_comp "Courier New" PQ QP 9 p 0.565989176743
+3_4 num_comp "Courier New" PQ QP 4 q 0.567688073264
+3_4 num_comp "Courier New" PQ QP 9 p 0.579913922586
+3_4 num_comp "Courier New" PQ QP 3 p 0.549366055522
+3_4 num_comp "Courier New" PQ QP 9 p 0.495525152888
+3_4 num_comp "Courier New" PQ QP 5 p 0.504238087568
+3_4 num_comp "Courier New" PQ QP 5 p 0.498722491902
+3_4 num_comp "Courier New" PQ QP 2 q 0.554659475922
+3_4 num_comp "Courier New" PQ QP 7 p 0.486284396844
+3_4 num_comp "Courier New" PQ QP 2 q 0.541829781374
+3_4 num_comp "Courier New" PQ QP 3 p 0.695590626448
+3_4 num_comp "Courier New" PQ QP 7 p 0.540727282874
+3_4 num_comp "Courier New" PQ QP 9 p 0.566507999552
+3_4 num_comp "Courier New" PQ QP 2 q 0.441037273384
+3_4 num_comp "Courier New" PQ QP 9 p 0.768365459749
+3_4 num_comp "Courier New" PQ QP 2 q 0.551722479402
+3_4 num_comp "Courier New" PQ QP 7 p 0.625879082014
+3_4 num_comp "Courier New" PQ QP 8 q 0.461579182534
+3_4 num_comp "Courier New" PQ QP 2 q 0.629140653065
+3_4 num_comp "Courier New" PQ QP 6 q 0.576698586228
+3_4 num_comp "Courier New" PQ QP 1 p 0.531223702012
+3_4 num_comp "Courier New" PQ QP 3 p 0.477089565131
+3_4 num_comp "Courier New" PQ QP 1 p 0.596950984909
+3_4 num_comp "Courier New" PQ QP 3 p 0.416862673243
+3_4 num_comp "Courier New" PQ QP 9 p 0.454698573798
+3_4 num_comp "Courier New" PQ QP 7 p 0.454308836139
+3_4 num_comp "Courier New" PQ QP 2 q 0.621867824346
+3_4 num_comp "Courier New" PQ QP 4 q 0.459197934601
+3_4 num_comp "Courier New" PQ QP 1 p 0.545693956548
+3_4 num_comp "Courier New" PQ QP 1 p 0.476879801834
+3_4 num_comp "Courier New" PQ QP 3 p 0.651885077008
+3_4 num_comp "Courier New" PQ QP 5 p 0.528222783469
+3_4 num_comp "Courier New" PQ QP 8 q 0.515400846605
+3_4 num_comp "Courier New" PQ QP 8 q 0.421101071173
+3_4 num_comp "Courier New" PQ QP 9 p 0.572667779634
+3_4 num_comp "Courier New" PQ QP 1 p 0.758182630641
+3_4 num_comp "Courier New" PQ QP 6 q 0.631026661023
+3_4 num_comp "Courier New" PQ QP 2 q 0.562066354672
+3_4 num_comp "Courier New" PQ QP 3 p 0.684287301265
+3_4 num_comp "Courier New" PQ QP 1 p 0.547178435256
+3_4 num_comp "Courier New" PQ QP 6 q 0.564812826575
+3_4 num_comp "Courier New" PQ QP 6 q 0.503734469414
+3_4 num_comp "Courier New" PQ QP 4 q 0.769643898821
+3_4 num_comp "Courier New" PQ QP 8 q 0.471982015064
+3_4 num_comp "Courier New" PQ QP 2 q 0.919880658388
+3_4 num_comp "Courier New" PQ QP 3 p 0.562796181999
+3_4 num_comp "Courier New" PQ QP 3 p 0.534311194322
+3_4 num_comp "Courier New" PQ QP 6 q 0.560831357725
+3_4 num_comp "Courier New" PQ QP 9 p 0.785928792204
+3_4 num_comp "Courier New" PQ QP 8 q 0.435437896405
+3_4 num_comp "Courier New" PQ QP 7 p 0.521636650199
+3_4 num_comp "Courier New" PQ QP 2 q 0.651016855612
+3_4 num_comp "Courier New" PQ QP 1 p 0.617144116084
+3_4 num_comp "Courier New" PQ QP 7 p 0.549576129182
+3_4 num_comp "Courier New" PQ QP 8 q 0.526842255611
+3_4 num_comp "Courier New" PQ QP 5 p 0.616050616256
+3_4 num_comp "Courier New" PQ QP 5 p 0.509260925697
+3_4 num_comp "Courier New" PQ QP 5 p 0.454559869482
+3_4 num_comp "Courier New" PQ QP 3 p 0.517169250525
+3_4 num_comp "Courier New" PQ QP 4 q 0.582515173708
+3_4 num_comp "Courier New" PQ QP 1 p 0.577489232528
