@@ -5,4 +5,6 @@ MAINTAINER Ákos Laczkó <akos.laczko88@gmail.com>
 USER root
 
 RUN apt-get update
-RUN pip install numpy scipy pandas matplotlib
+RUN apt-get install ttf-mscorefonts-installer ttf-freefont
+
+RUN pip install numpy scipy pandas matplotlib seaborn
