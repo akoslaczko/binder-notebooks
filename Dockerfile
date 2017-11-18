@@ -1,8 +1,8 @@
 FROM andrewosh/binder-base
 
-MAINTAINER Andrew Osheroff <andrewosh@gmail.com>
+MAINTAINER Ákos Laczkó <akos.laczko88@gmail.com>
 
 USER root
 
 RUN apt-get update
-RUN pip install -y numpy scipy pandas matplotlib
+RUN pip install numpy scipy pandas matplotlib
