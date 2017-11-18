@@ -9,19 +9,8 @@ import random
 import pandas as pd
 import numpy as np
 import statsmodels as sm
-import hddm
 from statsmodels.stats.multicomp import (pairwise_tukeyhsd, MultiComparison)
 from scipy import stats
-### Importing R objects
-from rpy2 import robjects
-from rpy2.robjects import pandas2ri
-pandas2ri.activate()
-import rpy2.robjects.lib.ggplot2 as gg
-from rpy2.robjects.packages import importr
-base = importr('base')
-rstats = importr('stats')
-ez = importr('ez')
-ggplot2 = importr('ggplot2')
 
 def collect_data(path, ext='csv', delim=','):
     data_list = []
@@ -149,127 +138,6 @@ def get_ez_params (Pc, VRT, MRT, s=0.1):
     ter = MRT - MDT  # This gives nondecision time.
     return v, a, ter
 
-def EZ_table(pc_table, rtm_table, rtv_table, col_names, sub_list, cell_size, hdd=False):
-    if hdd: 
-        ez_func = hddm.utils.EZ
-    else:
-        ez_func = get_ez_params
-    table_v = pd.DataFrame(columns = col_names)
-    table_a = pd.DataFrame(columns = col_names)
-    table_t = pd.DataFrame(columns = col_names)
-    for i, pc_row in enumerate(pc_table.iterrows()):
-        v_row = []
-        a_row = []
-        t_row = []
-        for j, pc_loc in enumerate(pc_row[1]):
-            #Edge-correction
-            if pc_loc == 1.0:
-                pc_loc = 1-1.0/(cell_size*2)
-            ez = get_ez_params(pc_loc, rtv_table.values[i][j], rtm_table.values[i][j])
-            v_row.insert(j, ez[0])
-            a_row.insert(j, ez[1])
-            t_row.insert(j, ez[2])
-        v_row_df = pd.DataFrame([v_row], columns = col_names)
-        a_row_df = pd.DataFrame([a_row], columns = col_names)
-        t_row_df = pd.DataFrame([t_row], columns = col_names)
-        table_v = pd.concat([table_v, v_row_df], ignore_index=True)
-        table_a = pd.concat([table_a, a_row_df], ignore_index=True)
-        table_t = pd.concat([table_t, t_row_df], ignore_index=True)    
-    table_v.index = sub_list
-    table_a.index = sub_list
-    table_t.index = sub_list
-    return table_v, table_a, table_t
-
-def EZ_skewness(data, ri='RTms', indep_var='Congruency', id_var='ID', seq=['C', 'N', 'I'], snarc=True):
-    mean_table = pd.pivot_table(data, values=ri, index=id_var, columns=indep_var, aggfunc=np.mean)
-    mean_table = pd.DataFrame(mean_table.values, index=sorted(set(data[id_var])), columns=sorted(seq))
-    mean_table = mean_table[seq]
-    if snarc: mean_table = mean_table.rename(columns=dict(zip(seq,range(len(seq)))))
-    skew_table = pd.pivot_table(data, values=ri, index=id_var, columns=indep_var, aggfunc=stats.skew)
-    skew_table = pd.DataFrame(skew_table.values, index=sorted(set(data[id_var])), columns=sorted(seq))
-    skew_table = skew_table[seq]
-    if snarc: skew_table = skew_table.rename(columns=dict(zip(seq,range(len(seq)))))
-    linreg_table = pd.DataFrame(columns=['slope', 'intercept', 'r_value', 'p_value', 'std_err'])
-    for i, sub in enumerate(mean_table.iterrows()):
-        y=[]
-        x=[]
-        for j, cond in enumerate(list(set(data[indep_var]))):
-            x.append(mean_table.iloc[i][j])
-            y.append(skew_table.iloc[i][j])
-        linreg_row = pd.DataFrame([stats.linregress(x,y)], columns=['slope', 'intercept', 'r_value', 'p_value', 'std_err'])
-        linreg_table = pd.concat([linreg_table, linreg_row])
-    linreg_table.index = sorted(list(set(data[id_var])))
-    return linreg_table
-
-def EZ_errorspeed2(data, ri='RTms', id_var='ID', error='Error'):
-    error_speed = pd.pivot_table(data, values=ri, index=id_var, columns=error, aggfunc=np.mean)
-    error_speed = pd.DataFrame(error_speed.values, index=sorted(list(set(data[id_var]))), columns=['Accurate', 'Erroneous'])
-    error_speed = error_speed.dropna(axis=0, how='any')
-    return error_speed
-    
-def EZ_errorspeed(data, ri='RTms', indep_var='Congruency', id_var='ID', error='Error'):
-    corrects = data[data[error]==0]
-    errors = data[data[error]==1]
-    # Mean of correct RTs
-    correct_table = pd.pivot_table(corrects, values=ri, index=id_var, columns=indep_var, aggfunc=np.mean)
-    correct_table = pd.DataFrame(correct_table.values, index=sorted(list(set(data[id_var]))), columns=sorted(list(set(data[indep_var]))))
-    corr_means = []
-    for sub in sorted(list(set(data[id_var]))):
-        corr_means.append(np.mean(correct_table.loc[sub]))
-    corr_fill=np.empty((0,len(corr_means)))
-    for i in range(len(set(data[indep_var]))):
-        corr_fill=np.vstack((corr_fill, np.asarray(corr_means)))
-    corr_fill = np.transpose(corr_fill)
-    corr_fill = pd.DataFrame(corr_fill, index=sorted(list(set(data[id_var]))), columns=sorted(list(set(data[indep_var]))))
-    correct_table = correct_table.fillna(value=corr_fill)
-    # Mean of erroneous RTs
-    error_table = pd.pivot_table(errors, values=ri, index=id_var, columns=indep_var, aggfunc=np.mean)
-    error_table = pd.DataFrame(error_table.values, index=sorted(list(set(data[id_var]))), columns=sorted(list(set(data[indep_var]))))
-    err_means = []
-    for sub in sorted(list(set(data[id_var]))):
-        err_means.append(np.mean(error_table.loc[sub]))
-    err_fill=np.empty((0,len(err_means)))
-    for i in range(len(set(data[indep_var]))):
-        err_fill=np.vstack((err_fill, np.asarray(err_means)))
-    err_fill = np.transpose(err_fill)
-    err_fill = pd.DataFrame(err_fill, index=sorted(list(set(data[id_var]))), columns=sorted(list(set(data[indep_var]))))
-    error_table = error_table.fillna(value=err_fill)
-    # Difference
-    diff_table = pd.DataFrame(correct_table.values - error_table.values, index=sorted(list(set(data[id_var]))), columns=sorted(list(set(data[indep_var]))))
-    return diff_table
-
-def EZ_bias(data, ri='RTms', id_var='ID', stim_var='t_color', error='Error'):
-    errors = data[data['Error']==1]
-    corrects = data[data['Error']==0]
-    # Erroneous RTs
-    error_table = pd.pivot_table(errors, values=ri, index=id_var, columns=stim_var, aggfunc=np.mean)
-    error_table = pd.DataFrame(error_table.values, index=sorted(list(set(data[id_var]))), columns=sorted(list(set(data[stim_var]))))
-    err_means = []
-    for sub in sorted(list(set(data[id_var]))):
-        err_means.append(np.mean(error_table.loc[sub]))
-    err_fill=np.empty((0,len(err_means)))
-    for i in range(len(set(data[stim_var]))):
-        err_fill=np.vstack((err_fill, np.asarray(err_means)))
-    err_fill = np.transpose(err_fill)
-    err_fill = pd.DataFrame(err_fill, index=sorted(list(set(data[id_var]))), columns=sorted(list(set(data[stim_var]))))
-    error_table = error_table.fillna(value=err_fill)
-    # Correct RTs
-    correct_table = pd.pivot_table(corrects, values=ri, index=id_var, columns=stim_var, aggfunc=np.mean)
-    correct_table = pd.DataFrame(correct_table.values, index=sorted(list(set(data[id_var]))), columns=sorted(list(set(data[stim_var]))))
-    corr_means = []
-    for sub in sorted(list(set(data[id_var]))):
-        corr_means.append(np.mean(correct_table.loc[sub]))
-    corr_fill=np.empty((0,len(corr_means)))
-    for i in range(len(set(data[stim_var]))):
-        corr_fill=np.vstack((corr_fill, np.asarray(corr_means)))
-    corr_fill = np.transpose(corr_fill)
-    corr_fill = pd.DataFrame(corr_fill, index=sorted(list(set(data[id_var]))), columns=sorted(list(set(data[stim_var]))))
-    correct_table = correct_table.fillna(value=corr_fill)
-    # Bias
-    bias_table = correct_table.subtract(error_table).values
-    bias_table = pd.DataFrame(bias_table, index=sorted(list(set(data[id_var]))), columns=['t1','t2'])
-    return bias_table
-
 ### ANOVA
 def rm_ANOVA(data, dep_var, indep_var=None, id_var=None, wide=True):
     """
@@ -389,60 +257,6 @@ def pairwise_ttest(data, dep_var, indep_var=None, id_var=None, wide=True):
     table = np.hstack([table, np.asarray(zip(bonf_list, holm_list))])
     table = pd.DataFrame(table, index=pairings, columns=['t','p','p (Bonf)','p (Holm)'])
     return table
-    
-def oneway_repANOVA(variables, sub_list, dep_name='measured', indep_name='condition'):
-    ### converting passed variables to long format
-    data = pd.concat(variables, axis=1,)
-    data.index = range(len(variables[0]))
-    id_var = pd.DataFrame(sub_list, columns=['ID'])
-    data = pd.concat([id_var, data], axis=1,)
-    labels = []
-    for i, var in enumerate(variables):
-        labels.insert(i, var.name)
-    data = pd.melt(data, id_vars='ID', value_vars=labels, var_name=indep_name, value_name=dep_name)
-    ### Testing
-    print rm_ANOVA(data, dep_name, indep_name, 'ID', wide=False)
-    print pairwise_ttest(data, dep_name, indep_name, 'ID', wide=False)
-    #print sm.pairwise_tukeyhsd(data[dep_name], data[indep_name], alpha=0.05)
-    data.boxplot(by=indep_name)
-    data = pandas2ri.py2ri(data)
-    ### using ezANOVA function from R
-    model = ez.ezANOVA(data=data, dv=base.as_symbol(dep_name), wid=base.as_symbol('ID'), within=base.as_symbol(indep_name), type=3)
-    print model
-    ### post hoc tests
-    posthoc = rstats.pairwise_t_test(data.rx2(dep_name), data.rx2(indep_name), paired = True, p_adjust_method = "bonferroni")
-    print 'Pairwise t tests (Bonferroni corrected)'
-    print posthoc[2]
-
-def pyezANOVA(data,dep_name,indep_name,id_name):
-    data = pandas2ri.py2ri(data)
-    model = ez.ezANOVA(data=data, dv=base.as_symbol(dep_name), wid=base.as_symbol(id_name), within=base.as_symbol(indep_name), type=3)
-    print model
-    
-def py_posthoc(data,dep_name,indep_name,id_name):
-    data = pandas2ri.py2ri(data)
-    posthoc = rstats.pairwise_t_test(data.rx2(dep_name), data.rx2(indep_name), paired = True, p_adjust_method = "bonferroni")
-    print posthoc[2]
-    
-def bar_plot(variables, sub_list, dep_name='measured', indep_name='condition',):
-    ### converting passed variables to long format
-    data = pd.concat(variables, axis=1,)
-    data.index = range(len(variables[0]))
-    id_var = pd.DataFrame(sub_list, columns=['ID'])
-    data = pd.concat([id_var, data], axis=1,)
-    labels = []
-    for i, var in enumerate(variables):
-        labels.insert(i, var.name)
-    data = pd.melt(data, id_vars='ID', value_vars=labels, var_name=indep_name, value_name=dep_name)
-    data = pandas2ri.py2ri(data)
-    ### using ggplot2 module from R
-    plt = gg.ggplot(data)
-    plt = plt + \
-    gg.aes_string(x=indep_name, y=dep_name) + \
-    gg.stat_summary(fun_y=base.mean, geom="bar", position="dodge") + \
-    gg.stat_summary(fun_data=ggplot2.mean_se, geom="errorbar", position=gg.position_dodge(width=0.90), width=0.2) + \
-    gg.labs(x=indep_name, y=dep_name)
-    return(plt)
     
 def mean_ci(data, confidence=0.95):
     a = 1.0*np.array(data)
